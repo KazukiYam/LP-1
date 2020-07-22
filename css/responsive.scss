@@ -1,0 +1,369 @@
+// color name
+$base: 
+#ffffff;
+$base2:
+#f2f2f2;
+$text:
+#333333;
+$main: 
+// #990000;
+// #b30000;
+#981b1b;
+// #11386F;
+// #575757;
+// #ff6666;
+$accent:
+#F84F50;
+$important: 
+#e60000;
+
+// pc responsive 768px~ 
+@media screen and (min-width:768px) {
+
+  .sp {
+    display: none;
+  }
+
+  .pc {
+    display: inline-block;
+  }
+
+  a:hover {
+    opacity: 1;
+  }
+
+  // レイアウト設定
+
+  .b-title {
+    width: 100%;
+    color: $base;
+    background-color: $main;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: .5rem;
+  }
+  
+  .w-title {
+    width: 100%;
+    color: $main;
+    margin: 0 auto;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 1rem;
+  }
+
+  .contact-btn {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    background-color: $base;
+    color: $accent;
+    background-color: $accent;
+    color: $base;
+    border: solid 1px $main;
+    padding: 20px 0;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    transition: all .3s ease 0s;
+    box-sizing: border-box;
+    margin: 1rem auto;
+  }
+  
+  .contact-btn:hover {
+    opacity: 1;
+    box-shadow: 0 5px 10px 0 $text;
+    transform: translateY(-.3rem);
+  }
+  
+  .tel-info {
+    margin: 0 auto;
+  }
+
+  // header
+  header {
+    text-align: left;
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    img {
+      width: 30%;
+    }
+  }
+  // header
+
+  // main-visual
+  .main {
+    background-color: $main;
+
+    .container {
+      padding: 0;
+      
+      img {
+        width: 100%;
+        vertical-align: bottom;
+        line-height: 1.0em;
+      }
+    }
+  }
+  // main-visual
+
+  // why-1 
+  .why-1 {
+  
+    h1 {
+      font-size: 1.5rem;
+      margin: 0;
+  
+      .large-text {
+        display: inline-block;
+        font-size: 2.5rem;
+      }
+    }
+  }
+  // why-1 
+
+  // reason
+  .reason {
+
+    img {
+      width: 80%;
+    }
+  }
+  // reason
+
+  // advantage 
+  .advantage {
+
+    .container {
+      padding: 4rem 1rem;
+    }
+  
+    .advantage-list {
+      display: flex;
+      
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      
+      li {
+        position: relative;
+        display: block;
+        background-color: $base;
+        width: 18%;
+        height: 15rem;
+        margin: .5rem;
+        padding: 0;
+        transition: all .3s ease 0s;
+        
+        .fas {
+          font-size: 3rem;
+        }
+        
+        .advantage-item {
+          height: 80%;
+          margin: .5rem auto;
+          padding: 1rem .5rem;
+          display: block;
+
+          .merit {
+            position: absolute;
+            display: inline-block;
+            top: -5%;
+            left: 50%;
+            transform: translateX(-50%);
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            font-size: 1rem;
+            font-weight: bold;
+            color: $main;
+            border-bottom: none;
+            width: 100%;
+          }
+
+          .item-flex {
+            position: relative;
+            display: block;
+            justify-content: normal;
+            align-items: normal;
+  
+            .text-item {
+              display: block;
+              margin-right: 0;
+              width: 100%;
+              font-weight: bold;
+              font-size: 1.2rem;
+              margin-top: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .item-flex::after {
+      content: none!important;
+    }
+
+    li::after {
+      position: absolute;
+      font-family: FontAwesome;
+      content: "\f103";
+      bottom: 3%;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      color: $main;
+      font-size: 1.5rem;
+      display: block;
+      pointer-events: none;
+    }
+
+    li:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+    
+  }
+  // advantage 
+
+  // advantage-1,2,3,4,5
+  .advantage-flex {
+    display: flex;
+    align-items: flex-start;
+    margin: 2rem auto;
+
+    p {
+      margin: 0 1rem;
+    }
+
+    .mt-1 {
+      margin-top: 1rem;
+    }
+
+  }
+  // advantage-1
+  
+  // why-2
+  .why-2 {
+  
+    .why-2-flex {
+      display: flex;
+      margin: 1rem auto;
+
+      img {
+        width: 50%;
+        margin-right: 1rem;
+      }
+
+      p {
+        width: 50%;
+      }
+    }
+  }
+  // why-2
+
+  // compare
+  .compare {
+    padding: 1rem 0;
+  }
+  // compare
+
+  // review
+  .review {
+
+    .balloon-left {
+      width: 100%;
+      margin: 2rem 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+  
+      .icon {
+        margin-right: 25px;
+      }
+  
+      .text {
+        box-shadow: 1px 1px 4px;
+      }
+  
+    }
+  
+    .balloon-right {
+      width: 100%;
+      margin: 30px 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      justify-content: flex-end;
+  
+      .icon {
+        margin-left: 25px;
+      }
+  
+      .text {
+        box-shadow: -1px 1px 4px;
+      }
+    }
+  
+    .icon img {
+      width: 15rem;
+    }
+  
+    .balloon-right .icon {
+      order: 2;
+    }
+  
+    .text {
+      width: 70%;
+      display: inline-block;
+      text-align: left;
+      display: flex;
+      flex-wrap: wrap;
+      position: relative;
+      padding: 0 1rem;
+      border-radius: 5px;
+      background: $base2;
+      box-sizing: border-box;
+      margin: 0 auto;
+  
+      &:after {
+        content: "";
+        position: absolute;
+        border: 10px solid transparent;
+      }
+    }
+  
+    .balloon-left .text:after {
+      left: -26px;
+      border-right: 25px solid $base2;
+    }
+  
+    .balloon-right .text:after {
+      right: -26px;
+      border-left: 25px solid $base2;
+    }
+  }
+  // review
+
+  // question
+  // question
+
+  // flow 
+  // flow 
+
+  // contact
+  // contact
+
+  // Footer
+  .footer-img {
+    width: 1100px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  // Footer
+
+}

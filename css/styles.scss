@@ -1,0 +1,496 @@
+// color name
+$base: 
+#ffffff;
+$base2:
+#F7F7F7;
+$text:
+#333333;
+$main: 
+// #990000;
+// #b30000;
+#981b1b;
+// #11386F;
+// #575757;
+// #ff6666;
+$accent:
+#F84F50;
+$important: 
+#e60000;
+
+// CSS for all
+body {
+  font-family: "Helvetica Neue",
+  Arial,
+  "Hiragino Kaku Gothic ProN",
+  "Hiragino Sans",
+  Meiryo,
+  sans-serif;
+  background-color: $base;
+  color: $text;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: .1rem;
+  text-align: center;
+}
+
+// 初期設定
+.pc {
+  display: none;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $text;
+  transition: all .5s ease 0s;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: .8;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+// レイアウト設定
+.container {
+  width: 1100px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+  // text-align: center;
+}
+
+.b-title {
+  width: 100%;
+  color: $base;
+  background-color: $main;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  padding: .3rem 0;
+}
+
+.w-title {
+  width: 100%;
+  color: $main;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  padding-top: 1rem;
+}
+
+.contact-btn {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: $accent;
+  color: $base;
+  border: solid 1px $main;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  transition: all .3s ease 0s;
+  box-sizing: border-box;
+  margin: 1rem auto;
+}
+
+.contact-btn:hover {
+  opacity: .8;
+}
+
+.tel-info {
+  margin: 0 auto;
+}
+
+// header
+header {
+  text-align: center;
+  padding: 5px;
+
+  img {
+    width: 90%;
+  }
+
+}
+// header
+
+// Main-Visual
+
+// Main-Visual
+
+// why-1
+.why-1 {
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  background-color: $base2;
+
+  h1 {
+    font-size: 1rem;
+    margin: 0;
+
+    .large-text {
+      display: inline-block;
+      font-size: 1.5rem;
+      color: $important;
+    }
+  }
+}
+// why-1
+
+// reason
+.reason {
+
+  .container {
+    padding: 1rem 0;
+  }
+}
+
+// reason
+
+// advantage
+.advantage {
+  background-color: $base2;
+
+  .advantage-list {
+    display: inline-block;
+    
+    li {
+      position: relative;
+      margin: 2rem auto;
+      background-color: $base;
+      padding: 1.5rem 1rem;
+      height: 3rem;
+      display: block;
+      
+      .fas {
+        color: $main;
+      }
+      
+      .advantage-item {
+        
+        .merit {
+          position: absolute;
+          display: inline-block;
+          top: -20%;
+          left: 50%;
+          transform: translateX(-50%);
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          font-size: 1.2rem;
+          font-weight: bold;
+          color: $main;
+          border-bottom: 2px dotted $main;
+        }
+        
+        .item-flex {
+          position: relative;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+
+          .text-item {
+            margin-right: 2.5rem;
+            width: 70%;
+            font-weight: bold;
+            font-size: 1.2rem;
+          }
+        }
+
+        .item-flex::after {
+          position: absolute;
+          font-family: FontAwesome;
+          content: "\f103";
+          top: 50%;
+          right: 0%;
+          transform: translateY(-50%);
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          color: $main;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+// advantage
+
+// advantage-1,2,3,4,5
+#advantage-2, #advantage-4 {
+  background-color: $base2;
+}
+
+.advantage-text {
+  text-align: left;
+}
+// advantage-1,2,3,4,5
+
+// why-2
+.why-2 {
+  background-color: $main;
+  color: $base;
+
+  .w-title {
+    color: $base;
+  }
+}
+// why-2
+
+// compare
+.compare {
+  background-color: $base2;
+
+  table {
+    margin: 0;
+    width: 100%;
+    border-collapse: collapse;
+    border: solid 2px $main;
+    
+    th {
+      background-color: $base2;
+    }
+
+    th, td {
+      border: dashed 1px $main;
+      box-sizing: border-box;
+      margin: 0 auto;
+    }
+  }
+}
+// compare
+
+// review
+.review {
+
+  .balloon-left {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .icon {
+      margin-right: 25px;
+    }
+
+    .text {
+      box-shadow: 1px 1px 4px;
+    }
+
+  }
+
+  .balloon-right {
+    margin: 30px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-end;
+
+    .icon {
+      margin-left: 25px;
+    }
+
+    .text {
+      box-shadow: -1px 1px 4px;
+    }
+  }
+
+  .icon img {
+    width: 80px;
+  }
+
+  .balloon-right .icon {
+    order: 2;
+  }
+
+  .text {
+    max-width: 500px;
+    display: inline-block;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 1rem;
+    border-radius: 5px;
+    background: $base2;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+    &:after {
+      content: "";
+      position: absolute;
+      border: 10px solid transparent;
+    }
+  }
+
+  .balloon-left .text:after {
+    left: -26px;
+    border-right: 25px solid $base2;
+  }
+
+  .balloon-right .text:after {
+    right: -26px;
+    border-left: 25px solid $base2;
+  }
+}
+// review
+
+// question
+.question {
+
+  .question-accordion {
+    position: relative;
+    width: 100%;
+    
+    .question-article-title {
+      text-align: left;
+      display: block;
+      position: relative;
+      margin: 1rem auto;
+      padding: 1rem;
+      cursor: pointer;
+      border: solid 1px $main;
+      background-color: $base2;
+
+      .fa-question-circle {
+        color: $main;
+      }
+    }
+
+    .question-article-title:hover,
+    .question-article-title:active,
+    .content-entry.open .question-article-title {
+      text-decoration: underline;
+    }
+
+    .question-article-title {
+      position: relative;
+    }
+
+    .question-article-title:after {
+      content: "";
+      position: absolute;
+      right: 25px;
+      top: 38%;
+      transition: all 0.2s ease-in-out;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-top: solid 3px $main;
+      border-right: solid 3px $main;
+      -webkit-transform: rotate(135deg);
+      transform: rotate(135deg);
+    }
+
+    .question-article-title.open:after {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: 45%;
+    }
+
+    .question-accordion-content {
+      text-align: left;
+      display: none;
+      padding: .5rem;
+      font-weight: 600;
+      color: $main;
+    }
+  }
+}
+// question
+
+// flow
+.flow {
+
+  .flow-accordion {
+    position: relative;
+    width: 100%;
+    
+    .flow-article-title {
+      display: block;
+      position: relative;
+      margin: 1rem auto;
+      padding: .2rem;
+      cursor: pointer;
+      background-color: $main;
+
+      .step {
+        margin: 0 auto;
+        background-color: $base;
+        color: $main;
+        padding: .3rem;
+      }
+      
+      .flow-title {
+        margin: 0 auto;
+        padding: .3rem;
+        color: $base;
+      }
+    }
+
+    .flow-article-title {
+      position: relative;
+    }
+
+    .flow-article-title:after {
+      content: "";
+      position: absolute;
+      right: 110px;
+      top: 15%;
+      transition: all 0.2s ease-in-out;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-top: solid 3px $main;
+      border-right: solid 3px $main;
+      -webkit-transform: rotate(135deg);
+      transform: rotate(135deg);
+    }
+
+    .flow-article-title.open:after {
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: 20%;
+    }
+
+    .flow-accordion-content {
+      text-align: left;
+      display: none;
+      padding: .5rem;
+      font-weight: 600;
+      color: $main;
+    }
+  }
+}
+// flow
+
+// contact
+.contact {
+  background-color: $base2;
+
+  .btn2 {
+    color: $base;
+  }
+}
+// contact
+
+// footer
+footer {
+  background-color: $base2;
+
+  .b-title {
+    margin-top: 0;
+  }
+}
+// footer
+
